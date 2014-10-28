@@ -1,4 +1,5 @@
 venv/
+secrets.py
 
 led / optimized / DLL files
 __pycache__/
