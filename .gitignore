@@ -1,5 +1,6 @@
 venv/
 secrets.py
+accounts.csv
 
 led / optimized / DLL files
 __pycache__/
