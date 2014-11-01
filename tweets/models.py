@@ -1,3 +1,5 @@
+import os
+import csv
 
 class Tweeter(object):
 
@@ -18,6 +20,9 @@ class Tweeter(object):
         self._type = ttype
         self._org = org
         self._real_name = real_name
+
+    def convert_to_sql_tuple(self):
+        return (self.user_name, self.team, self.ttype, self.org, self.real_name)
 
     @property
     def user_name(self):
