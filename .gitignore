@@ -1,6 +1,9 @@
 venv/
 secrets.py
 accounts.csv
+schema.sql
+.DS_STORE
+database.db
 
 led / optimized / DLL files
 __pycache__/

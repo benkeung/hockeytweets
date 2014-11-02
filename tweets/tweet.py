@@ -1,6 +1,7 @@
 import twitter
 import secrets
 import time
+import pprint
 
 MAX_COUNT = 200
 
@@ -21,7 +22,8 @@ class Tweeter(object):
         since_id = self.__get_since_id(user)
         tweets = api.GetUserTimeline(screen_name=user, count=MAX_COUNT,
                                     since_id=since_id)
-
+        pp = pprint.PrettyPrinter(indent=4)
+        pp.pprint(vars(tweets[0]))
         if tweets:
             last_since_id = tweets[0].id
             self.__set_since_id(user, last_since_id)
